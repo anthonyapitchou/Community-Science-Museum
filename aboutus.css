@@ -287,162 +287,12 @@ color: white;
   border-radius: 50%;
 }
 
-/* ===================================
-   MEDIA QUERIES
-   =================================== */
 
-/* Tablets */
-@media (max-width: 1024px) {
 
-  /* About / Values Page */
-  .values {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .mission,
-  .vision,
-  .customer {
-    width: 80%;
-    height: auto;
-    padding: 15px;
-  }
-
-  .cover {
-    height: 150px;
-  }
-
-  .cover h1 {
-    font-size: 1.8rem;
-  }
-
-  .about h1 {
-    font-size: 22px;
-  }
-
-  .about p {
-    font-size: 16px;
-  }
-
-  /* Header */
-  header {
-    flex-direction: row; /* keep horizontal */
-    height: auto;
-    padding: 10px 20px;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .nav-link {
-    flex-direction: row; /* horizontal links */
-    gap: 20px;
-    padding-right: 20px;
-  }
-
-  /* Footer adjustments */
-  .footer-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-
-  /* About / Values Page */
-  .values {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 10px;
-  }
-
-  .mission,
-  .vision,
-  .customer {
-    width: 90%;
-    height: auto;
-    padding: 15px;
-  }
-
-  .cover {
-    height: 120px;
-    padding: 0 10px;
-  }
-
-  .cover h1 {
-    font-size: 1.5rem;
-  }
-
-  .about h1 {
-    font-size: 20px;
-  }
-
-  .about p {
-    font-size: 14px;
-  }
-
-  /* Header */
-  header {
-    flex-direction: row; /* keep horizontal */
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 10px;
-  }
-
-  .nav-link {
-    flex-direction: row; /* horizontal links */
-    gap: 10px;
-    padding-right: 10px;
-  }
-
-  /* Membership / Contact Section */
-  .membership {
-    height: 200px;
-    padding: 0 10px;
-  }
-
-  .overlay-content {
-    width: 90%;
-    height: auto;
-    padding: 20px;
-    margin: 20px auto;
-  }
-
-  .cover-membership h1 {
-    font-size: 2rem;
-  }
-
-  .cover-membership h3 {
-    font-size: 1rem;
-    max-width: 90%;
-  }
-
-  .text-contact {
-    width: 90%;
-  }
-
-  .text-contact h2 {
-    font-size: 1.5rem;
-  }
-
-  .text-contact li {
-    font-size: 1rem;
-  }
-
-  /* Footer adjustments */
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-/* Extra small mobile */
+/* Extra small mobile (max-width: 480px) */
 @media (max-width: 480px) {
 
+  /* Cover / About / Membership Titles */
   .cover h1,
   .cover-membership h1 {
     font-size: 1.3rem;
@@ -452,11 +302,13 @@ color: white;
     font-size: 18px;
   }
 
+  /* Text adjustments */
   .about p,
   .text-contact li {
     font-size: 12px;
   }
 
+  /* Values cards */
   .mission,
   .vision,
   .customer {
@@ -464,6 +316,7 @@ color: white;
     padding: 10px;
   }
 
+  /* Membership overlay */
   .overlay-content {
     padding: 15px;
   }
@@ -472,3 +325,4 @@ color: white;
     font-size: 0.9rem;
   }
 }
+
