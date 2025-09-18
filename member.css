@@ -385,3 +385,37 @@ height: auto;
   height: 40px;
   border-radius: 50%;
 }
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .membership {
+    height: 300px;
+    background-position: center center;
+  }
+
+  .cover-membership h1 {
+    font-size: 40px;
+  }
+
+  .cover-membership h3 {
+    font-size: 18px;
+  }
+
+  .membership-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .membership-cards {
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+}
+
