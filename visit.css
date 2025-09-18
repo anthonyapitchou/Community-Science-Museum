@@ -340,18 +340,18 @@ text-align: center;
 }
 
 
-/*media*/
-@media screen and (max-width: 768px) {
+/* Mobile screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
   .Community,
   .info,
   .user {
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    gap: 15px;
+    padding: 10px;
   }
 
   .text-community h1 {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   .info-map img,
@@ -370,7 +370,7 @@ text-align: center;
   }
 
   .text-button h3 {
-    font-size: 18px;
+    font-size: 16px;
     max-width: 100%;
   }
 
@@ -379,4 +379,3 @@ text-align: center;
     text-align: center;
   }
 }
-
