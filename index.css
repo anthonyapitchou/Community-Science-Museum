@@ -477,7 +477,7 @@ text-align: center ;
   }
 }
 
-* Mobile screens (max-width: 480px) */
+/* Mobile screens (max-width: 480px) */
 @media (max-width: 480px) {
   .welcome {
     height: 300px;
@@ -502,3 +502,4 @@ text-align: center ;
     padding: 10px 0;
   }
 }
+
