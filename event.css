@@ -1,0 +1,288 @@
+body {
+  color: var(--color-primary);
+  background-color: #f5f5f5;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;              /* remove default browser margin */
+  padding: 0;             /* remove padding that was shrinking your site */
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+
+}
+
+
+/*header container*/
+header{
+ position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+    position: relative;
+    z-index: 10;
+ background-color: #444445;     
+ height: 80px;
+}
+
+
+.logo img {
+
+height:70px;
+border-radius: 50px;
+margin-left: 30px;
+}
+
+.nav-link{
+   
+ margin-left: auto;
+    display: flex;
+  align-items: center;   /* <-- makes items align vertically */
+    gap: 40px;
+    padding-right: 50px;
+}
+
+.nav-link ul{
+  display: flex;
+   align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+    padding: 0;
+}
+
+.nav-link a{
+   align-items: center;
+color: white;
+text-decoration: none;
+font-weight: 500;
+font-size: 18px;
+transition: color 0.3s ease;
+
+}
+
+.nav-link a:hover{
+color: white;
+  text-decoration: underline;
+}
+
+.logo,
+.nav-link,
+.nav-right {
+  position: relative;
+  z-index: 2;
+color: white;
+}
+
+a.current {
+  font-weight: bold;
+color: white;  
+font-size: 1.3rem;
+}
+
+.become-member {
+  display: inline-block;
+  background-color: #3FA752;
+  padding: 12px 24px;
+   border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.become-member:hover {
+     background-color: #339e4a;
+
+}
+
+
+
+/* Main container for the events page */
+
+
+
+
+/* Container for title + description + filters */
+.title-event {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* left align all elements */
+  text-align: left;
+  gap: 15px; /* space between h1, h3, and filters */
+  margin: 40px; /* optional padding from edges */
+}
+
+/* Event title */
+.title-event h1 {
+  font-size: 50px;
+  margin: 0;
+  color: #000;
+}
+
+/* Event description */
+.title-event h3 {
+  font-size: 25px;
+  margin: 0;
+  color: #000;
+  
+}
+
+/* Filters row: What + When side by side */
+.events-filters-row {
+  display: flex;
+  gap: 40px; /* space between filters */
+  align-items: flex-start; /* align top edges */
+  margin-top: 30px;
+}
+
+/* Individual filter block */
+.filter-block {
+  display: flex;
+  flex-direction: column; /* label above input/select */
+  gap: 5px;
+  align-items: flex-start;
+}
+
+.filter-block label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.filter-block select,
+.filter-block input {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+
+
+/* Event container */
+.event {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+/* Date column */
+.event-date {
+  flex: 1;
+  text-align: center;
+}
+
+.event-date h1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/* Image column */
+.event-image {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.event-image img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover; /* Keeps image consistent */
+  border-radius: 8px;
+}
+
+/* Info column */
+.event-info {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.event-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn-date,
+.btn-event {
+background-color: #3FA752;  
+color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.btn-date:hover,
+.btn-event:hover {
+background-color: #339e4a; }
+
+
+/* footer */
+.footer {
+  background-color: #4d908e; /* teal-like background */
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 10px
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  margin: 10px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-column p,
+.footer-column li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #FFD93D; /* highlight yellow */
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  height: 40px;
+  border-radius: 50%;
+}
