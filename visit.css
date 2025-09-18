@@ -338,3 +338,45 @@ text-align: center;
   height: 40px;
   border-radius: 50%;
 }
+
+
+/*media*/
+@media screen and (max-width: 768px) {
+  .Community,
+  .info,
+  .user {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .text-community h1 {
+    font-size: 36px;
+  }
+
+  .info-map img,
+  .accessibility img,
+  .restaurant img,
+  .shop img {
+    width: 100%;
+    height: auto;
+  }
+
+  .info-map,
+  .accessibility,
+  .restaurant,
+  .shop {
+    width: 100%;
+  }
+
+  .text-button h3 {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .visit {
+    width: 100%;
+    text-align: center;
+  }
+}
+
