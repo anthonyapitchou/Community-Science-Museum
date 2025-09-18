@@ -287,8 +287,14 @@ color: white;
   border-radius: 50%;
 }
 
+/* ===================================
+   MEDIA QUERIES
+   =================================== */
+
 /* Tablets */
 @media (max-width: 1024px) {
+
+  /* About / Values Page */
   .values {
     flex-direction: column;
     align-items: center;
@@ -301,6 +307,7 @@ color: white;
   .customer {
     width: 80%;
     height: auto;
+    padding: 15px;
   }
 
   .cover {
@@ -319,20 +326,48 @@ color: white;
     font-size: 16px;
   }
 
+  /* Header */
   header {
-    flex-direction: column;
+    flex-direction: row; /* keep horizontal */
     height: auto;
-    padding: 10px 0;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .nav-link {
-    padding-right: 20px;
+    flex-direction: row; /* horizontal links */
     gap: 20px;
+    padding-right: 20px;
+  }
+
+  /* Footer adjustments */
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
+
+  /* About / Values Page */
+  .values {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .mission,
+  .vision,
+  .customer {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+
   .cover {
     height: 120px;
     padding: 0 10px;
@@ -350,25 +385,90 @@ color: white;
     font-size: 14px;
   }
 
-  .mission,
-  .vision,
-  .customer {
-    width: 90%;
-    height: auto;
-    padding: 15px;
-  }
-
+  /* Header */
   header {
-    flex-direction: column;
-    height: auto;
-    padding: 5px 0;
+    flex-direction: row; /* keep horizontal */
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
   }
 
   .nav-link {
-    flex-direction: column;
+    flex-direction: row; /* horizontal links */
     gap: 10px;
     padding-right: 10px;
   }
+
+  /* Membership / Contact Section */
+  .membership {
+    height: 200px;
+    padding: 0 10px;
+  }
+
+  .overlay-content {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .cover-membership h1 {
+    font-size: 2rem;
+  }
+
+  .cover-membership h3 {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .text-contact {
+    width: 90%;
+  }
+
+  .text-contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-contact li {
+    font-size: 1rem;
+  }
+
+  /* Footer adjustments */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
+/* Extra small mobile */
+@media (max-width: 480px) {
 
+  .cover h1,
+  .cover-membership h1 {
+    font-size: 1.3rem;
+  }
+
+  .about h1 {
+    font-size: 18px;
+  }
+
+  .about p,
+  .text-contact li {
+    font-size: 12px;
+  }
+
+  .mission,
+  .vision,
+  .customer {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .overlay-content {
+    padding: 15px;
+  }
+
+  .cover-membership h3 {
+    font-size: 0.9rem;
+  }
+}
