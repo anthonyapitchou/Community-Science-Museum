@@ -270,3 +270,150 @@ address {
   height: 40px;
   border-radius: 50%;
 }
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+
+  /* Membership section */
+  .membership {
+    height: 250px;
+    background-position-x: center;
+    background-position-y: center;
+  }
+
+  .cover-membership h1 {
+    font-size: 50px;
+  }
+
+  .cover-membership h3 {
+    font-size: 18px;
+    max-width: 500px;
+  }
+
+  .overlay-content {
+    width: 90%;
+    height: auto;
+    padding: 32px 24px;
+  }
+
+  /* Contact section */
+  .text-contact {
+    max-width: 500px;
+    font-size: 1rem;
+  }
+
+  .text-contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .text-contact li {
+    font-size: 1.1rem;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    margin: 15px 0;
+    text-align: center;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+
+  /* Membership section */
+  .membership {
+    height: 200px;
+    padding: 10px;
+  }
+
+  .cover-membership h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .cover-membership h3 {
+    font-size: 16px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .overlay-content {
+    width: 95%;
+    padding: 24px 16px;
+  }
+
+  /* Contact section */
+  .text-contact {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .text-contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-contact li {
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Extra small screens (very small phones) */
+@media (max-width: 480px) {
+
+  .membership {
+    height: 180px;
+  }
+
+  .cover-membership h1 {
+    font-size: 28px;
+  }
+
+  .cover-membership h3 {
+    font-size: 14px;
+  }
+
+  .overlay-content {
+    padding: 16px 12px;
+  }
+
+  .text-contact h2 {
+    font-size: 1.3rem;
+  }
+
+  .text-contact li {
+    font-size: 0.9rem;
+  }
+
+  .become-member,
+  .text-contact a {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+
+  .footer-bottom {
+    gap: 5px;
+  }
+}
