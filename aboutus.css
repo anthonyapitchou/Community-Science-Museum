@@ -286,3 +286,89 @@ color: white;
   height: 40px;
   border-radius: 50%;
 }
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .values {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .mission,
+  .vision,
+  .customer {
+    width: 80%;
+    height: auto;
+  }
+
+  .cover {
+    height: 150px;
+  }
+
+  .cover h1 {
+    font-size: 1.8rem;
+  }
+
+  .about h1 {
+    font-size: 22px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .nav-link {
+    padding-right: 20px;
+    gap: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .cover {
+    height: 120px;
+    padding: 0 10px;
+  }
+
+  .cover h1 {
+    font-size: 1.5rem;
+  }
+
+  .about h1 {
+    font-size: 20px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .mission,
+  .vision,
+  .customer {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 5px 0;
+  }
+
+  .nav-link {
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 10px;
+  }
+}
+
+
