@@ -477,7 +477,7 @@ text-align: center ;
   }
 }
 
-/* Mobile */
+* Mobile screens (max-width: 480px) */
 @media (max-width: 480px) {
   .welcome {
     height: 300px;
@@ -502,21 +502,3 @@ text-align: center ;
     padding: 10px 0;
   }
 }
-
-/* Focus outline for accessibility */
-a:focus,
-button:focus {
-  outline: 2px solid #FFD93D;
-  outline-offset: 3px;
-}
-
-/* Slight hover effect on picture containers */
-.container-upleft:hover,
-.container-upright:hover,
-.container-downleft:hover,
-.container-downright:hover {
-  transform: scale(1.02);
-  transition: transform 0.3s ease;
-}
-
-
