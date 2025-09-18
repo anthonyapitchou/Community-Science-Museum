@@ -638,177 +638,84 @@ background-image: url("picture/samuel-zeller.jpg");
 }
 
 
-/* Medium screens (1024px and below) */
-@media screen and (max-width: 1024px) {
-  /* General flex stacking */
-  .membership-section,
-  .membership-cards,
-  .Community,
-  .info,
-  .user,
-  .container-club,
-  .container-teaching,
-  .discovery,
-  .container-exploration {
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  /* Full width containers */
-  .membership-left,
-  .membership-right,
-  .welcome-course,
-  .container-left,
-  .container-right,
-  .container-teaching-left,
-  .container-teaching-right,
-  .container-discovery-left,
-  .container-discovery-right,
-  .container-exploration-left,
-  .container-exploration-right,
-  .virtual-course {
-    width: 100%;
-  }
-
-  /* Images responsive */
-  .container-left img,
-  .container-right img,
-  .container-teaching-right img,
-  .container-discovery-right img,
-  .container-exploration-left img,
-  .membership .card img,
-  .info-map img,
-  .accessibility img,
-  .restaurant img,
-  .shop img,
-  .virtual {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Text adjustments */
-  h1 {
-    font-size: 32px !important;
-  }
-  h2 {
-    font-size: 24px !important;
-  }
-  h3 {
-    font-size: 18px !important;
-  }
-  p {
-    font-size: 16px !important;
-  }
-
-  /* Buttons full width */
-  .cta,
-  .select-button,
-  .become-member,
-  .visit {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Special adjustments */
-  .virtual {
-    padding-left: 20px;
-    padding-right: 20px;
-    justify-content: center;
-    text-align: center;
-  }
-  .cover-membership {
-    padding: 1rem 1.5rem;
-  }
-  .text-button {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-/* Small screens (768px and below) */
-@media screen and (max-width: 768px) {
-  /* Reduce padding */
-  .membership-section,
-  .membership-cards,
-  .Community,
-  .info,
-  .user,
-  .container-club,
-  .container-teaching,
-  .discovery,
-  .container-exploration {
-    padding: 15px;
-    gap: 15px;
-  }
-
-  /* Font scaling */
-  h1 {
-    font-size: 28px !important;
-  }
-  h2 {
-    font-size: 22px !important;
-  }
-  h3 {
-    font-size: 16px !important;
-  }
-  p {
-    font-size: 14px !important;
-  }
-
-  /* Stack text/buttons */
-  .text-button {
-    flex-direction: column;
-  }
-
-  .cta,
-  .select-button,
-  .become-member,
-  .visit {
-    width: 100%;
-  }
-
-  /* Smaller images */
-  .container-left img,
-  .container-right img,
-  .container-teaching-right img,
-  .container-discovery-right img,
-  .container-exploration-left img,
-  .membership .card img,
-  .info-map img,
-  .accessibility img,
-  .restaurant img,
-  .shop img,
-  .virtual {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Virtual section center alignment */
-  .virtual {
-    justify-content: center;
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  /* Membership overlay smaller */
-  .cover-membership {
-    padding: 0.75rem 1rem;
-  }
-
-  /* Container padding adjustments */
-  .container-club,
-  .container-teaching,
-  .discovery,
-  .container-exploration {
-    padding: 15px;
-  }
-}
-
-/* Extra small screens (480px and below) */
+/* Extra small screens (max-width: 480px) - Mobile Only */
 @media screen and (max-width: 480px) {
-  /* Stack all flex containers fully */
+  /* Page 1: About / Values */
+  .cover {
+    height: 100px;
+  }
+
+  .cover h1 {
+    font-size: 1.2rem;
+  }
+
+  .about h1 {
+    font-size: 18px;
+  }
+
+  .about p {
+    font-size: 12px;
+  }
+
+  .mission,
+  .vision,
+  .customer {
+    width: 95%;
+    padding: 10px;
+  }
+
+  /* Page 2: Membership / Contact */
+  .membership {
+    height: 180px;
+  }
+
+  .cover-membership h1 {
+    font-size: 28px;
+  }
+
+  .cover-membership h3 {
+    font-size: 14px;
+  }
+
+  .overlay-content {
+    padding: 16px 12px;
+  }
+
+  .text-contact {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .text-contact h2 {
+    font-size: 1.3rem;
+  }
+
+  .text-contact li {
+    font-size: 0.9rem;
+  }
+
+  .become-member,
+  .text-contact a {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+
+  .footer-bottom {
+    gap: 5px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  /* Page 3: Membership / Courses / Virtual etc */
   .membership-section,
   .membership-cards,
   .Community,
@@ -823,7 +730,6 @@ background-image: url("picture/samuel-zeller.jpg");
     padding: 10px;
   }
 
-  /* Font scaling */
   h1 {
     font-size: 24px !important;
   }
@@ -837,7 +743,6 @@ background-image: url("picture/samuel-zeller.jpg");
     font-size: 12px !important;
   }
 
-  /* Buttons full width */
   .cta,
   .select-button,
   .become-member,
@@ -847,7 +752,6 @@ background-image: url("picture/samuel-zeller.jpg");
     padding: 0.5rem 1rem;
   }
 
-  /* Images full width */
   .container-left img,
   .container-right img,
   .container-teaching-right img,
@@ -863,20 +767,18 @@ background-image: url("picture/samuel-zeller.jpg");
     height: auto;
   }
 
-  /* Virtual & membership overlays adjustments */
   .virtual {
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .cover-membership {
     padding: 0.5rem 0.75rem;
   }
 
-  /* Remove extra gaps */
   .text-button,
   .info,
   .user {
     gap: 10px;
   }
 }
-
