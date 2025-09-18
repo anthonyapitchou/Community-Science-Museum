@@ -321,7 +321,7 @@ background-color: #339e4a; }
   }
 }
 
-/* Mobile */
+/* Mobile screens (max-width: 480px) */
 @media (max-width: 480px) {
   .title-event h1 {
     font-size: 28px;
@@ -346,5 +346,3 @@ background-color: #339e4a; }
     padding: 8px 12px;
   }
 }
-
-
