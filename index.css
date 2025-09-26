@@ -11,16 +11,36 @@ body {
 }
 
 
-header{
-height: 80px;
- position: relative;
-height: 80px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-    position: relative;
-    z-index: 10;
+header {
+  position: fixed;  /* FIXED at top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  flex-wrap: nowrap; /* NO wrapping */
+  padding: 0 30px;   /* padding inside header */
+  background-color: white; /* optional */
+  box-sizing: border-box;
 }
+
+
+.logo img {
+  height: 70px;
+}
+
+.nav-link {
+  display: flex;
+  gap: 30px;   /* space between links */
+}
+
+.become-member {
+  padding: 12px 24px;
+}
+
 
 .logo img {
 
