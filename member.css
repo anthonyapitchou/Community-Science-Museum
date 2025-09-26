@@ -387,34 +387,131 @@ height: auto;
 }
 
 /* Mobile screens (max-width: 480px) */
-@media screen and (max-width: 480px) {
+@media (max-width: 768px) {
+
+  /* Header → horizontal but smaller */
+  header {
+    flex-direction: row;   /* keep horizontal */
+    height: 70px;
+    padding: 0 10px;
+  }
+
+  .logo img {
+    height: 50px;
+    margin-left: 10px;
+  }
+
+  .nav-link {
+    flex-direction: row;
+    gap: 15px;
+    padding-right: 10px;
+    margin-left: auto;
+  }
+
+  .nav-link ul {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  a.current {
+    font-size: 1.1rem;
+  }
+
+  .become-member {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  /* Membership section → stack content */
   .membership {
-    height: 200px;
-    background-position: center top;
+    height: auto;
+    min-height: 300px;
+    background-position: center center;
+  }
+
+  .cover-membership {
+    padding: 1rem 1.5rem;
   }
 
   .cover-membership h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .cover-membership h3 {
     font-size: 16px;
+    max-width: 90%;
   }
 
+  /* Membership content → left & right stack */
   .membership-section {
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+    padding: 20px 10px;
   }
 
+  .membership-left,
+  .membership-right {
+    flex: 1 1 100%;
+    padding: 20px;
+  }
+
+  .membership-left h3,
+  .membership-right h3 {
+    font-size: 18px;
+  }
+
+  .membership-right ul {
+    font-size: 16px;
+    padding-left: 15px;
+  }
+
+  /* Membership cards → single column */
   .membership-cards {
     flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    margin: 15px auto;
+    gap: 20px;
+    max-width: 100%;
+    margin: 20px auto;
   }
 
   .card {
     width: 100%;
     height: auto;
+    padding: 20px;
+  }
+
+  .wrapper-icons-price {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+  }
+
+  .icon-individual,
+  .icon-guest,
+  .icon-family {
+    width: 50px;
+  }
+
+  .select-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* Footer → full width columns */
+  .footer-container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 5px;
   }
 }
