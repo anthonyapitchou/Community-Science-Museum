@@ -339,7 +339,6 @@ text-align: center;
   border-radius: 50%;
 }
 
-
 /* Mobile screens (max-width: 480px) */
 @media (max-width: 768px) {
   /* Ensure body doesn't overflow */
