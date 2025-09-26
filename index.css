@@ -471,127 +471,74 @@ text-align: center ;
   border-radius: 50%;
 }
 
-/* Mobile screens (max-width: 480px) */
+/* Mobile and tablets → adapted sizes */
 @media (max-width: 768px) {
+
   /* Ensure body doesn't overflow */
   body, html {
     max-width: 100%;
     overflow-x: hidden;
   }
 
-  /* Header → horizontal, items centered */
+  /* Header → row, smaller */
   header {
     flex-direction: row;
-    height: auto;
-    padding: 10px 20px;
+    height: 60px;
+    padding: 10px 15px;
   }
 
   .logo img {
     height: 50px;
-    margin-left: 10px;
+    margin-left: 5px;
   }
 
   .nav-link {
-    padding-right: 10px;
-    gap: 20px;
-  }
-
-  .nav-link ul {
-    flex-direction: column;
     gap: 15px;
+    padding-right: 10px;
   }
 
   .nav-link a {
-    font-size: 16px;
+    font-size: 14px;
   }
 
-  /* Main content containers → stack vertically */
-  .Community, .info, .user {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .text-community img,
-  .info-map img,
-  .accessibility img,
-  .restaurant img,
-  .shop img {
-    width: 100%;
-    height: auto;
-    margin: 0;
-  }
-
-  .text-info, .info-map, .accessibility, .restaurant, .shop {
-    width: 100%;
-  }
-
-  /* Cards → stack vertically */
-  .membership-cards {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-  }
-
-  .card {
-    width: 90%;
-    max-width: 350px;
-    height: auto;
-    padding: 20px;
-  }
-
-  /* Buttons → smaller and centered */
-  .select-button,
-  .visit,
   .become-member {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  /* Grid pictures → single column, equal smaller height */
+  .container-pictures {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+    gap: 15px;
     width: 90%;
-    max-width: 250px;
-    margin: 10px auto;
+    margin: 0 auto;
   }
 
-  /* Membership section → stack */
-  .membership-section {
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+  .container-pictures > div {
+    height: 100%;
   }
 
-  .membership-left,
-  .membership-right {
-    width: 100%;
-    padding: 15px;
-  }
-
-  /* Cover membership text */
-  .cover-membership h1 {
-    font-size: 32px;
-  }
-
-  .cover-membership h3 {
-    font-size: 16px;
-    max-width: 100%;
-  }
-
-  /* Footer → full width columns */
+  /* Footer → row but smaller */
   .footer-container {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
     padding: 0 10px;
   }
 
   .footer-column {
-    flex: 1 1 100%;
+    flex: 1;
+    margin: 0 5px;
     text-align: center;
-    margin: 5px 0;
+    font-size: 14px;
   }
 
   .footer-bottom {
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 10px;
     gap: 5px;
   }
 }
+
