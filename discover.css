@@ -638,147 +638,160 @@ background-image: url("picture/samuel-zeller.jpg");
 }
 
 
-/* Extra small screens (max-width: 480px) - Mobile Only */
-@media screen and (max-width: 480px) {
-  /* Page 1: About / Values */
-  .cover {
-    height: 100px;
+/* Extra small screens (max-width: 480px) - Mobile Only *
+/* =======================
+   Media Queries (mobile)
+======================= */
+@media (max-width: 768px) {
+
+  /* Header stays horizontal */
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 70px;
   }
 
-  .cover h1 {
-    font-size: 1.2rem;
+  .logo img {
+    height: 50px;
+    margin-left: 10px;
   }
 
-  .about h1 {
-    font-size: 18px;
+  .nav-link {
+    gap: 15px;
+    padding-right: 10px;
   }
 
-  .about p {
-    font-size: 12px;
+  .nav-link ul {
+    gap: 10px;
   }
 
-  .mission,
-  .vision,
-  .customer {
-    width: 95%;
-    padding: 10px;
+  .nav-link a {
+    font-size: 16px;
   }
 
-  /* Page 2: Membership / Contact */
-  .membership {
-    height: 180px;
+  a.current {
+    font-size: 1rem;
   }
 
-  .cover-membership h1 {
-    font-size: 28px;
-  }
-
-  .cover-membership h3 {
+  .become-member {
+    padding: 8px 16px;
     font-size: 14px;
   }
 
-  .overlay-content {
-    padding: 16px 12px;
+  /* Course overlay text */
+  .course_content {
+    max-width: 90%;
+    text-align: left;
+    padding: 10px;
   }
 
-  .text-contact {
-    max-width: 100%;
-    font-size: 0.9rem;
+  .course_content h1 {
+    font-size: 28px;
   }
 
-  .text-contact h2 {
-    font-size: 1.3rem;
+  .course_content h3 {
+    font-size: 18px;
   }
 
-  .text-contact li {
-    font-size: 0.9rem;
+  /* Welcome course */
+  .welcome-course {
+    width: 90%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
-  .become-member,
-  .text-contact a {
-    font-size: 0.9rem;
-    padding: 10px 16px;
+  .welcome-course h2 {
+    font-size: 20px;
   }
 
-  .footer-bottom {
-    gap: 5px;
+  .welcome-course p {
+    font-size: 16px;
   }
 
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-column {
-    flex: 1 1 100%;
-    margin: 10px 0;
+  .welcome-course .cta {
+    width: 100%;
     text-align: center;
+    padding: 10px;
   }
 
-  /* Page 3: Membership / Courses / Virtual etc */
-  .membership-section,
-  .membership-cards,
-  .Community,
-  .info,
-  .user,
+  /* General containers */
   .container-club,
   .container-teaching,
   .discovery,
   .container-exploration {
     flex-direction: column;
-    gap: 10px;
-    padding: 10px;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 20px;
   }
 
-  h1 {
-    font-size: 24px !important;
-  }
-  h2 {
-    font-size: 20px !important;
-  }
-  h3 {
-    font-size: 14px !important;
-  }
-  p {
-    font-size: 12px !important;
+  .container-left,
+  .container-teaching-left,
+  .container-discovery-left,
+  .container-exploration-right {
+    width: 90%;
+    height: auto;
+    margin-left: 0;
   }
 
-  .cta,
-  .select-button,
-  .become-member,
-  .visit {
-    width: 100%;
-    font-size: 14px;
-    padding: 0.5rem 1rem;
+  .container-right,
+  .container-teaching-right,
+  .container-discovery-right,
+  .container-exploration-left {
+    width: 90%;
+    height: auto;
+    margin-left: 0;
   }
 
-  .container-left img,
-  .container-right img,
-  .container-teaching-right img,
-  .container-discovery-right img,
-  .container-exploration-left img,
-  .membership .card img,
-  .info-map img,
-  .accessibility img,
-  .restaurant img,
-  .shop img,
-  .virtual {
+  .container-image img {
     width: 100%;
     height: auto;
   }
 
+  /* Virtual section */
   .virtual {
-    padding-left: 10px;
-    padding-right: 10px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .cover-membership {
-    padding: 0.5rem 0.75rem;
+  .virtual-course {
+    width: 90%;
+    padding: 10px;
   }
 
-  .text-button,
-  .info,
-  .user {
-    gap: 10px;
+  .virtual-course h2 {
+    font-size: 20px;
+  }
+
+  .virtual-course p {
+    font-size: 16px;
+  }
+
+  .virtual-course .cta {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Footer -> stack columns */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 5px;
   }
 }
