@@ -351,6 +351,8 @@ text-align: center;
   /* Header horizontal */
   header {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: auto;
     padding: 10px 15px;
   }
@@ -361,17 +363,22 @@ text-align: center;
   }
 
   .nav-link {
-    gap: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     padding-right: 10px;
   }
 
   .nav-link ul {
+    display: flex;
     flex-direction: row;
     gap: 10px;
+    margin: 0;
+    padding: 0;
   }
 
   .nav-link a {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   a.current {
@@ -379,73 +386,144 @@ text-align: center;
   }
 
   .become-member {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  /* Community Section */
+  .Community {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .title-Community h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .community-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .text-button {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .text-button h2 {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .visit {
+    width: auto;
     padding: 8px 16px;
     font-size: 14px;
   }
 
-  /* Cover image */
-  .cover {
-    height: auto;
-    min-height: 200px;
-    background-position: center center;
-    background-size: cover;
-    border-radius: 10px;
-    margin: 10px;
-  }
-
-  .cover h1 {
-    font-size: 24px;
-    padding: 10px;
-  }
-
-  /* Event / pictures grid */
-  .container-pictures {
-    display: flex;
+  /* Info Section */
+  .info {
     flex-direction: column;
     gap: 15px;
-    width: 100%;
-    margin: 0;
-    padding: 0 10px;
+    padding: 15px 10px;
   }
 
-  .container-upleft,
-  .container-upright,
-  .container-downleft,
-  .container-downright {
+  .text-info, .info-map {
     width: 100%;
-    height: 200px;           /* uniform height */
-    border-radius: 15px;
-    background-size: cover;
-    background-position: center center;
+    text-align: center;
   }
 
-  /* Map picture */
+  .text-info h2, .info-map h2 {
+    font-size: 20px;
+  }
+
+  .text-info h3 {
+    font-size: 14px;
+  }
+
   .info-map img {
     width: 100%;
-    max-height: 250px;       /* smaller height */
-    object-fit: cover;
+    height: auto;
+    max-height: 200px;
     border-radius: 10px;
   }
 
-  /* Footer → stack columns */
-  .footer-container {
+  /* User Section */
+  .user {
     flex-direction: column;
-    align-items: center;
-    padding: 0 10px;
+    gap: 15px;
+    padding: 15px 10px;
+  }
+
+  .accessibility,
+  .restaurant,
+  .shop {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .accessibility h2,
+  .restaurant h2,
+  .shop h2 {
+    font-size: 20px;
+  }
+
+  .accessibility p,
+  .restaurant p,
+  .shop p {
+    font-size: 14px;
+  }
+
+  .accessibility img,
+  .restaurant img,
+  .shop img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 10px;
+    padding: 0 10px;
   }
 
   .footer-column {
-    flex: 1 1 100%;
+    flex: 1 1 45%; /* two columns per row if possible */
     text-align: center;
     margin: 5px 0;
   }
 
+  .footer-column h3 {
+    font-size: 16px;
+  }
+
+  .footer-column p,
+  .footer-column li {
+    font-size: 13px;
+  }
+
   .footer-bottom {
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .footer-logo {
+    height: 35px;
   }
 }
