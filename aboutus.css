@@ -290,39 +290,143 @@ color: white;
 
 
 /* Extra small mobile (max-width: 480px) */
-@media (max-width: 480px) {
+/* Extra small mobile (max-width: 480px) */
+/* =======================
+   Media Queries (max-width: 768px)
+======================= */
+@media (max-width: 768px) {
 
-  /* Cover / About / Membership Titles */
-  .cover h1,
-  .cover-membership h1 {
-    font-size: 1.3rem;
+  /* Header adjustments */
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 70px;
+  }
+
+  .logo img {
+    height: 50px;
+    margin-left: 10px;
+  }
+
+  .nav-link {
+    gap: 15px;
+    padding-right: 10px;
+  }
+
+  .nav-link ul {
+    gap: 10px;
+  }
+
+  .nav-link a {
+    font-size: 16px;
+  }
+
+  a.current {
+    font-size: 1rem;
+  }
+
+  .become-member {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  /* Cover section */
+  .cover {
+    height: 150px;
+    padding: 10px;
+    background-position: center center;
+  }
+
+  .cover h1 {
+    font-size: 24px;
+    letter-spacing: .08em;
+  }
+
+  /* About section */
+  .about {
+    padding: 30px 10px;
   }
 
   .about h1 {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 15px;
   }
 
-  /* Text adjustments */
-  .about p,
-  .text-contact li {
-    font-size: 12px;
+  .about p {
+    font-size: 16px;
   }
 
-  /* Values cards */
+  /* Values container */
+  .values {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 10px;
+    max-width: 95%;
+  }
+
   .mission,
   .vision,
   .customer {
-    width: 95%;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .mission img,
+  .vision img,
+  .customer img {
+    height: 180px;
+    margin-bottom: 10px;
+  }
+
+  .mission h2,
+  .vision h2,
+  .customer h2 {
+    font-size: 18px;
+  }
+
+  .mission p,
+  .vision p,
+  .customer p {
+    font-size: 14px;
+  }
+
+  /* Footer adjustments */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .footer-logo {
+    height: 35px;
+  }
+
+  .footer-column input[type="email"] {
+    width: 90%;
+    font-size: 14px;
     padding: 10px;
   }
 
-  /* Membership overlay */
-  .overlay-content {
-    padding: 15px;
-  }
-
-  .cover-membership h3 {
-    font-size: 0.9rem;
+  .footer-column button {
+    width: 90%;
+    font-size: 14px;
+    padding: 10px;
   }
 }
-
