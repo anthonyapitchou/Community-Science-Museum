@@ -638,160 +638,57 @@ background-image: url("picture/samuel-zeller.jpg");
 }
 
 
-/* Extra small screens (max-width: 480px) - Mobile Only *
-/* =======================
-   Media Queries (mobile)
-======================= */
-@media (max-width: 768px) {
 
-  /* Header stays horizontal */
-  header {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    height: 70px;
-  }
+media (max-width: 768px) {
 
-  .logo img {
-    height: 50px;
-    margin-left: 10px;
-  }
+  /* ... ton code existant ... */
 
-  .nav-link {
+  /* Grid pictures → all same height */
+  .container-pictures {
+    display: grid;
+    grid-template-columns: 1fr; /* une seule colonne sur mobile */
+    grid-auto-rows: 200px;      /* hauteur fixe pour toutes */
     gap: 15px;
-    padding-right: 10px;
-  }
-
-  .nav-link ul {
-    gap: 10px;
-  }
-
-  .nav-link a {
-    font-size: 16px;
-  }
-
-  a.current {
-    font-size: 1rem;
-  }
-
-  .become-member {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-
-  /* Course overlay text */
-  .course_content {
-    max-width: 90%;
-    text-align: left;
-    padding: 10px;
-  }
-
-  .course_content h1 {
-    font-size: 28px;
-  }
-
-  .course_content h3 {
-    font-size: 18px;
-  }
-
-  /* Welcome course */
-  .welcome-course {
     width: 90%;
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 auto;
   }
 
-  .welcome-course h2 {
-    font-size: 20px;
+  .container-pictures > div {
+    height: 100%;               /* force toutes les div à prendre la même hauteur */
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
   }
 
-  .welcome-course p {
-    font-size: 16px;
-  }
-
-  .welcome-course .cta {
+  /* Optionnel si tu as des images <img> dedans */
+  .container-pictures img {
     width: 100%;
-    text-align: center;
-    padding: 10px;
+    height: 100%;
+    object-fit: cover;           /* recadrage automatique pour garder proportions */
+    border-radius: 20px;
   }
 
-  /* General containers */
-  .container-club,
-  .container-teaching,
-  .discovery,
-  .container-exploration {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 10px;
-    gap: 20px;
-  }
-
-  .container-left,
-  .container-teaching-left,
-  .container-discovery-left,
-  .container-exploration-right {
-    width: 90%;
-    height: auto;
-    margin-left: 0;
-  }
-
-  .container-right,
-  .container-teaching-right,
-  .container-discovery-right,
-  .container-exploration-left {
-    width: 90%;
-    height: auto;
-    margin-left: 0;
-  }
-
-  .container-image img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Virtual section */
-  .virtual {
-    height: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .virtual-course {
-    width: 90%;
-    padding: 10px;
-  }
-
-  .virtual-course h2 {
-    font-size: 20px;
-  }
-
-  .virtual-course p {
-    font-size: 16px;
-  }
-
-  .virtual-course .cta {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
-
-  /* Footer -> stack columns */
+  /* Footer → reste en ligne mais plus petit */
   .footer-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
     padding: 0 10px;
   }
 
   .footer-column {
-    flex: 1 1 100%;
+    flex: 1;
+    margin: 0 5px;
     text-align: center;
+    font-size: 14px;
   }
 
   .footer-bottom {
-    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 10px;
     gap: 5px;
   }
 }
+
+
