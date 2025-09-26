@@ -476,30 +476,107 @@ text-align: center ;
     gap: 10px;
   }
 }
-
-/* Mobile screens (max-width: 480px) */
-@media (max-width: 480px) {
-  .welcome {
-    height: 300px;
-    background-position: center top;
+/* Mobile and tablets → all in column */
+@media (max-width: 768px) {
+  /* Welcome section */
+  .welcome { 
+    height: auto; 
+    min-height: 300px;
   }
-
-  .welcome_content h1 {
-    font-size: 28px;
-  }
-
-  .welcome_content h3 {
-    font-size: 14px;
-  }
-
-  .container-pictures {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-
-  .cta-button {
+  .overlay-content {
     width: 90%;
-    padding: 10px 0;
+    height: auto;
+    padding: 16px;
+    margin: 16px auto;
+  }
+  .welcome_content h1 { font-size: 28px; }
+  .welcome_content h3 { font-size: 16px; }
+
+  /* Grid pictures → single column */
+  .container-pictures {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .container-upleft,
+  .container-upright,
+  .container-downleft,
+  .container-downright {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* smaller radius for mobile */
+  }
+
+  /* Footer → full width columns */
+  .footer-container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 10px;
+  }
+  .footer-column {
+    flex: 1 1 100%;
+    margin: 5px 0;
+    text-align: center;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    gap: 5px;
   }
 }
+  /* Welcome section */
+  .welcome { 
+    height: auto; 
+    min-height: 300px; 
+  }
 
+  .overlay-content {
+    width: 90%;
+    height: auto;
+    padding: 16px;
+    margin: 16px auto;
+  }
+  .welcome_content h1 { font-size: 28px; }
+  .welcome_content h3 { font-size: 16px; }
+
+  /* Grid pictures → single column */
+  .container-pictures {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .container-upleft,
+  .container-upright,
+  .container-downleft,
+  .container-downright {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* smaller radius for mobile */
+  }
+
+  /* Footer → full width columns */
+  .footer-container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 10px;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    gap: 5px;
+  }
