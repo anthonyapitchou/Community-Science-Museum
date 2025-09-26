@@ -323,41 +323,121 @@ address {
 }
 
 /* Mobile screens (max-width: 480px) */
-@media (max-width: 480px) {
-  /* Membership section */
-  .membership {
-    height: 180px;
+/* =======================
+   Media Queries (mobile)
+======================= */
+@media (max-width: 768px) {
+
+  /* Header stays horizontal */
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 70px;
   }
 
-  .cover-membership h1 {
-    font-size: 28px;
+  .logo img {
+    height: 50px;
+    margin-left: 10px;
   }
 
-  .cover-membership h3 {
+  .nav-link {
+    gap: 15px;
+    padding-right: 10px;
+  }
+
+  .nav-link ul {
+    gap: 10px;
+  }
+
+  .nav-link a {
+    font-size: 16px;
+  }
+
+  a.current {
+    font-size: 1rem;
+  }
+
+  .become-member {
+    padding: 8px 16px;
     font-size: 14px;
   }
 
+  /* Membership section */
+  .membership {
+    height: auto;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background-position: center;
+  }
+
+  .cover-membership {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
   .overlay-content {
-    padding: 16px 12px;
+    width: 90%;
+    height: auto;
+    padding: 24px 16px;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .cover-membership h1 {
+    font-size: 36px;
+  }
+
+  .cover-membership h3 {
+    font-size: 18px;
+    max-width: 90%;
   }
 
   /* Contact section */
+  .contact-section {
+    padding: 1rem;
+  }
+
+  .text-contact {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
   .text-contact h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .text-contact li {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
 
-  .become-member,
   .text-contact a {
-    font-size: 0.9rem;
-    padding: 10px 16px;
+    font-size: 1rem;
   }
 
-  /* Footer adjustments */
+  /* Footer -> stack columns */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
   .footer-bottom {
+    flex-direction: column;
     gap: 5px;
+  }
+
+  .footer-logo {
+    height: 35px;
   }
 }
